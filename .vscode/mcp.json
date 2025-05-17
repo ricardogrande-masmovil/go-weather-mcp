@@ -1,0 +1,8 @@
+{
+    "servers": {
+        "calculator": {
+            "type": "sse",
+            "url": "http://localhost:8080/api/sse",
+        }
+    }
+}
