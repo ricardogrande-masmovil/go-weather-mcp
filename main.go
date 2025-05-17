@@ -40,7 +40,6 @@ func main() {
 	// Add the weather handler (uses open-meteo API)
 	mcpServer.AddTool(weatherTool, weatherHandler)
 
-	// Use a dynamic base path based on a path parameter (Go 1.22+)
 	sseServer := server.NewSSEServer(
 		mcpServer,
 		server.WithStaticBasePath("/api/"),
